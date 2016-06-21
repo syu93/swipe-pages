@@ -69,9 +69,8 @@ which is impossible given that the size of the `swipe-pages` element is well-def
     <style>
       :host, .pagesContainer {
         display: block;
-        position: relative;
-        height: 100%;
         width: 100%;
+        height: 100%;
       }
 
       :host{
@@ -85,9 +84,9 @@ which is impossible given that the size of the `swipe-pages` element is well-def
         transform: translateZ(0);
       }
 
-      content[select="swipe-page"]::content *{
+      ::content swipe-page {
         position: absolute;
-        top: 0;
+        height: 100%;
       }
     </style>
 
